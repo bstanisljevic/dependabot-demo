@@ -1,14 +1,7 @@
-import requests
+import pandas as pd
 
-def get_url(url):
-    response = requests.get(url)
-    return response.content
+df = pd.DataFrame({'A': [True, False, True], 'B': [1, 2, 3]})
 
-def main():
-    url = 'https://www.google.com'
-    content = get_url(url)
-    print(content)
-
-if __name__ == '__main__':
-    main()
+# This will work in Pandas 1.5.3
+print(df.index.is_boolean())
 
