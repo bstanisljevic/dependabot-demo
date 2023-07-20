@@ -1,1 +1,2 @@
 pandas==1.5.3
+fastapi==0.99.0
