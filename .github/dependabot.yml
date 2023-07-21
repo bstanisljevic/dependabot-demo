@@ -8,4 +8,6 @@ updates:
   - package-ecosystem: "pip" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "15m"
+      interval: "daily"
+      # Check for pip updates at 9:10am UTC
+      time: "09:10"
